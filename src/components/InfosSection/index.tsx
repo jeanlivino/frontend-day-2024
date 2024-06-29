@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 
-export function InfosSection() {
+function InfosSection() {
   return (
     <section className="flex items-center flex-col gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover">
       <div className="flex justify-center items-center container mx-auto mt-10">
@@ -91,3 +91,5 @@ export function InfosSection() {
     </section>
   );
 }
+
+export default InfosSection;

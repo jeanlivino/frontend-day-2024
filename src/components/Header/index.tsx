@@ -52,7 +52,7 @@ const Header: React.FC = () => {
             <a href='#' className='text-white'>
               FAQ
             </a>
-            <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto'>
+            <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto z-10'>
               <Button variant='pink'>Inscreva-se agora</Button>
             </div>
           </div>

@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 function InfosSection() {
   return (
     <section className='flex items-center flex-col gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover pt-8'>
-      <div className='flex justify-center items-center container mx-auto mt-10'>
+      <div className='flex justify-center items-center max-w-[960px] mx-auto mt-10'>
         <div className='flex max-lg:flex-col max-lg:text-center gap-11 justify-center items-center w-full'>
           <Image
             className='w-96 hidden md:block'
@@ -14,16 +14,18 @@ function InfosSection() {
             width={1275}
             height={691}
           />
-          <p className='text-slate-50 text-lg'>
-            Um dia completo de evento pago, onde reuniremos palestrantes de
-            diversas áreas da tecnologia e empresas parceiras para levar alto
-            volume de conhecimento, conexão e networking para os participantes
-          </p>
+          <div>
+            <p className='text-slate-50 text-lg'>
+              Um dia completo de evento, onde reuniremos palestrantes de
+              diversas áreas da tecnologia e empresas parceiras para levar alto
+              volume de conhecimento, conexão e networking para os participantes
+            </p>
+            <Button className='mt-4 text-lg' size='lg' variant='pink'>
+              Ingressos
+            </Button>
+          </div>
         </div>
       </div>
-      <Button className='text-lg p-5' variant='pink'>
-        Ingressos
-      </Button>
       <div className='flex container max-lg:flex-col justify-center items-end mt-12'>
         <Image
           className='self-end max-w-[550px] hidden md:block w-full h-auto'

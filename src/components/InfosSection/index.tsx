@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 
 function InfosSection() {
   return (
-    <section className='flex items-center flex-col gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover'>
+    <section className='flex items-center flex-col gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover py-8'>
       <div className='flex justify-center items-center container mx-auto mt-10'>
         <div className='flex max-lg:flex-col max-lg:text-center gap-11 justify-center items-center w-full'>
           <Image
@@ -26,7 +26,7 @@ function InfosSection() {
       </Button>
       <div className='flex max-lg:flex-col justify-between mr-28'>
         <Image
-          className='self-start w-[600px] md:hidden '
+          className='self-start w-[600px] hidden md:block'
           src='/astronaut.png'
           alt='Astronauta'
           width={780}

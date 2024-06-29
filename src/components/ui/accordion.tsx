@@ -1,51 +1,51 @@
-"use client"
+'use client';
 
-import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { MinusIcon } from "lucide-react"
-import * as React from "react"
+import * as React from 'react';
+import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import { MinusIcon } from 'lucide-react';
 
-import { cn } from "@/lib/utils"
+import { cn } from '@/lib/utils';
 
-const Accordion = AccordionPrimitive.Root
+const Accordion = AccordionPrimitive.Root;
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={cn("", className)}
-    {...props}
-  />
-))
-AccordionItem.displayName = "AccordionItem"
+  <AccordionPrimitive.Item ref={ref} className={cn('', className)} {...props} />
+));
+AccordionItem.displayName = 'AccordionItem';
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
-  >(({ className, children, ...props }, ref) => {
-    const [isOpen, setIsOpen] = React.useState(false);
-    return (
-      <AccordionPrimitive.Header className="flex">
-        <AccordionPrimitive.Trigger
-          ref={ref}
-          className={cn(
-            "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline gap-6",
-            className
-          )}
-          onClick={() => setIsOpen(!isOpen)}
-          {...props}
-        >
-          {children}
-            <div className="relative">
-              <MinusIcon className={`${isOpen && 'rotate-180'} absolute h-4 w-4 shrink-0 transition-transform duration-200 rotate-90`} />
-              <MinusIcon className="h-4 w-4" />
-            </div>
-        </AccordionPrimitive.Trigger>
-      </AccordionPrimitive.Header>
-    )
-  })
-AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
+>(({ className, children, ...props }, ref) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  return (
+    <AccordionPrimitive.Header className='flex'>
+      <AccordionPrimitive.Trigger
+        ref={ref}
+        className={cn(
+          'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline gap-6',
+          className
+        )}
+        onClick={() => setIsOpen(!isOpen)}
+        {...props}
+      >
+        {children}
+        <div className='relative'>
+          <MinusIcon
+            className={`absolute h-4 w-4 shrink-0 transition-transform duration-200 ${
+              isOpen ? 'rotate-180' : 'rotate-90'
+            } `}
+          />
+          <MinusIcon className='h-4 w-4' />
+        </div>
+      </AccordionPrimitive.Trigger>
+    </AccordionPrimitive.Header>
+  );
+});
+AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
@@ -53,14 +53,13 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    className='overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down'
     {...props}
   >
-    <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    <div className={cn('pb-4 pt-0', className)}>{children}</div>
   </AccordionPrimitive.Content>
-))
+));
 
-AccordionContent.displayName = AccordionPrimitive.Content.displayName
+AccordionContent.displayName = AccordionPrimitive.Content.displayName;
 
-export { Accordion, AccordionContent, AccordionItem, AccordionTrigger }
-
+export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };

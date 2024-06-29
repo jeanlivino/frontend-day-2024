@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image';
-import { Button } from '../ui/button';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+
+import { Button } from '../ui/button';
 
 const Header: React.FC = () => {
   const [hasScrolled, setHasScrolled] = useState(false);

@@ -81,14 +81,21 @@ function InfosSection() {
             </p>
           </div>
           <div className='flex flex-col gap-1'>
+            <h2 className='font-kdam text-3xl'>Experiências</h2>
+            <p className='text-purple-600 text-md'>Ativações instagramavéis</p>
+          </div>
+
+          <div className='flex flex-col gap-1'>
+            <h2 className='font-kdam text-3xl'>Studio de fotos</h2>
+            <p className='text-purple-600 text-md'>
+              Fotos profissionais para Linkedin
+            </p>
+          </div>
+          <div className='flex flex-col gap-1'>
             <h2 className='font-kdam text-3xl'>Loja</h2>
             <p className='text-purple-600 text-md'>
               Produtos exclusivos da Comunidade de Front End CE
             </p>
-          </div>
-          <div className='flex flex-col gap-1'>
-            <h2 className='font-kdam text-3xl'>Experiências</h2>
-            <p className='text-purple-600 text-md'>Ativações instagramavéis</p>
           </div>
         </div>
       </div>

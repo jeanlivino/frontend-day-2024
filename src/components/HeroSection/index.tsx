@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className='bg-galaxy min-h-[80vh] flex flex-col items-center justify-center p-4 pt-8 md:pt-[122px]'>
+    <div className='bg-galaxy min-h-[80vh] flex flex-col items-center justify-center p-4 pt-8 md:py-[122px]'>
       <div className='grid md:grid-cols-[1fr_1.8fr] reverse container max-w-[1160px] h-full mx-auto gap-4 md:gap-8'>
         <div className='grid'>
           <h1 className='text-2xl md:text-4xl font-bold font-kdam uppercase text-purple-500'>

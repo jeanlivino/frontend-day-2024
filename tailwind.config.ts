@@ -74,6 +74,7 @@ const config = {
       },
       backgroundImage: {
         galaxy: "url('/bg-galaxy.jpg')",
+        'purple-gradient': 'linear-gradient(to right, #8C5BF1, #9F35C4)',
       },
     },
   },

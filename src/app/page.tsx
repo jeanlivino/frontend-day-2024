@@ -1,9 +1,11 @@
-import CountdownSection from "@/components/CountdownSection";
-import EventsPlaceSection from "@/components/EventsPlaceSection";
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import InfosSection from "@/components/InfosSection";
-import SponsorsSection from "@/components/SponsorsSection";
+import CountdownSection from '@/components/CountdownSection';
+import EventsPlaceSection from '@/components/EventsPlaceSection';
+import { FaqSection } from '@/components/FaqSection';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import InfosSection from '@/components/InfosSection';
+import SpeakersSection from '@/components/SpeakersSection';
+import SponsorsSection from '@/components/SponsorsSection';
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <SponsorsSection />
       <InfosSection />
       <EventsPlaceSection />
+      <FaqSection />
+      <SpeakersSection />
     </main>
   );
 }

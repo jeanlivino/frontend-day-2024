@@ -75,6 +75,10 @@ const config = {
       backgroundImage: {
         galaxy: "url('/bg-galaxy.jpg')",
         'purple-gradient': 'linear-gradient(to right, #8C5BF1, #9F35C4)',
+        'black-gradient':
+          'linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0))',
+        'purple-gradient-opacity':
+          'linear-gradient(to top, rgba(140, 91, 241, 0.7), rgba(159, 53, 196, 0.7))',
       },
     },
   },

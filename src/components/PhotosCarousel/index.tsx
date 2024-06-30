@@ -7,8 +7,6 @@ import {
   Carousel as CarouselContainer,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
 
 export default function PhotosCarousel() {
@@ -46,8 +44,6 @@ export default function PhotosCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </CarouselContainer>
   );
 }

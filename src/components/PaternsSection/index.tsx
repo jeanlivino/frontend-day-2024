@@ -1,54 +1,73 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-export default function PartnersSection() {
+import { Community, Sponsor } from '@/types';
+
+type Props = {
+  partners: Sponsor[];
+  communities: Community[];
+};
+
+const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
   return (
-    <section className="py-12 lg:pt-20 lg:pb-48 space-y-12 bg-blue-300">
-      <div className="container">
-        <h2 className="text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8">
+    <section className='py-6 lg:pb-48 space-y-12 '>
+      <div className='container'>
+        <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8'>
           APOIO
         </h2>
-        <div className="flex flex-wrap justify-center items-center py-6 gap-6">
-          <div className="w-full max-w-36 h-14">
-            <Image
-              className="w-full h-full object-contain"
-              src={'/logo-fendce.png'}
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
-          </div>
-          <div className="w-full max-w-36 h-14">
-            <Image
-              className="w-full h-full object-contain"
-              src={'/logo-purple.svg'}
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
-          </div>
+        <div className='flex flex-wrap justify-center items-center py-6 gap-6'>
+          {partners.map((sponsor, index) => (
+            <a
+              href={sponsor.link}
+              target='_blank'
+              rel='noreferrer'
+              key={index}
+              className='hover:opacity-80 transition-opacity block'
+            >
+              <Image
+                src={sponsor.image}
+                width={200}
+                height={200}
+                alt={sponsor.name}
+                style={{
+                  width: '180px',
+                  objectFit: 'contain',
+                  aspectRatio: ' 4/3',
+                }}
+              />
+            </a>
+          ))}
         </div>
       </div>
-      <div className="container">
-        <h2 className="text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8">
+      <div className='container'>
+        <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8'>
           COMUNIDADES PARCEIRAS
         </h2>
-        <div className="flex flex-wrap justify-center items-center py-6 gap-6">
-          {Array.from({ length: 5 }).map((_, index) => (
-            <div key={index} className="w-full max-w-36 h-14">
+        <div className='flex flex-wrap justify-center items-center py-6 gap-6'>
+          {communities.map((sponsor, index) => (
+            <a
+              href={sponsor.link}
+              target='_blank'
+              rel='noreferrer'
+              key={index}
+              className='hover:opacity-80 transition-opacity block'
+            >
               <Image
-                className="w-full h-full object-contain"
-                src={'/logo-purple.svg'}
-                alt=""
-                width={0}
-                height={0}
-                sizes="100vw"
+                src={sponsor.image}
+                width={200}
+                height={200}
+                alt={sponsor.title}
+                style={{
+                  width: '160px',
+                  objectFit: 'contain',
+                  aspectRatio: ' 4/3',
+                }}
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default PartnersSection;

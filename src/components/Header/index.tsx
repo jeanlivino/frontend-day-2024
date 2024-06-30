@@ -46,14 +46,16 @@ const Header: React.FC = () => {
             <a href='#speakers' className='text-white'>
               Quem vai
             </a>
-            <a href='#schedule' className='text-white'>
+            {/* <a href='#schedule' className='text-white'>
               Agenda
-            </a>
+            </a> */}
             <a href='#faq' className='text-white'>
               FAQ
             </a>
             <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto z-10'>
-              <Button variant='pink'>Inscreva-se agora</Button>
+              <a href='https://eventos.frontendce.com.br/event/day/4'>
+                <Button variant='pink'>Inscreva-se agora</Button>
+              </a>
             </div>
           </div>
         </div>

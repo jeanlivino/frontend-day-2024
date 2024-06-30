@@ -4,10 +4,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { FAQItem } from '@/types';
 
-export default function FaqSection() {
+import './index.css';
+type Props = {
+  faq: FAQItem[];
+};
+
+const FaqSection: React.FC<Props> = ({ faq }) => {
   return (
-    <section id='faq' className='flex flex-col justify-center items-center w-full bg-black'>
+    <section
+      id='faq'
+      className='flex flex-col justify-center items-center w-full bg-black'
+    >
       <div className='flex justify-center items-center bg-purple-gradient w-full py-12 lg:py-0 lg:h-36'>
         <div className='flex flex-col lg:flex-row items-center w-full max-w-4xl gap-12 px-6 lg:px-0'>
           <p className='font-kdam uppercase text-4xl text-white whitespace-nowrap text-center lg:text-left'>
@@ -41,17 +50,18 @@ export default function FaqSection() {
             collapsible
             className='flex flex-col w-full gap-3'
           >
-            {Array.from({ length: 6 }).map((_, index) => (
+            {faq.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
                 className='w-full bg-purple-gradient rounded-xl px-6 text-lg'
               >
-                <AccordionTrigger>
-                  O que está incluso no valor do ingresso?
-                </AccordionTrigger>
+                <AccordionTrigger>{item.question}</AccordionTrigger>
                 <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  <div
+                    className='bg-slate-100 p-6 rounded-xl text-slate-900'
+                    dangerouslySetInnerHTML={{ __html: item.answer }}
+                  />
                 </AccordionContent>
               </AccordionItem>
             ))}
@@ -60,4 +70,6 @@ export default function FaqSection() {
       </div>
     </section>
   );
-}
+};
+
+export default FaqSection;

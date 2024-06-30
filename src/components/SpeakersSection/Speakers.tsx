@@ -61,9 +61,12 @@ const SpeakersDesktop: React.FC = () => {
               transition: 'flex-basis 0.3s ease-in-out',
             }}
           >
-            <img
+            <Image
               src={speaker.image}
               alt={speaker.name}
+              width={0}
+              height={0}
+              sizes='100vw'
               className={`w-full h-full object-cover ${animationClasses} ${
                 !isHovered ? 'filter grayscale' : ''
               }`}

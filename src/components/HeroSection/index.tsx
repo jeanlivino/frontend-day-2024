@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
           <h1 className='text-2xl md:text-4xl font-bold font-kdam uppercase text-purple-500'>
             O maior evento da comunidade Front-End CE
           </h1>
-          <p className='md:text-xl text-white'>
+          <p className='md:text-xl text-white mt-3'>
             Alto nível de conteúdo e networking para estudantes, profissionais e
             entusiastas em Front-End, Back-End, UX, empreendedorismo, carreira,
             tecnologia e inovação.
@@ -23,6 +23,9 @@ const HeroSection: React.FC = () => {
         <h2 className='text-2xl md:text-4xl mt-8 md:mt-20 font-kdam font-bold text-center tracking-widest text-white uppercase'>
           14 de setembro | Fortaleza
         </h2>
+        <p className='text-center text-slate-300 mt-4'>
+          08h às 20h | Fábrica de Negócios - Av. Monsenhor Tabosa, 740 - Centro
+        </p>
       </div>
     </div>
   );

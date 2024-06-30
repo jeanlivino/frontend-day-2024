@@ -27,28 +27,37 @@ const speakers = [
     description: 'Engenheira iOS na Riot Games',
     image: '/speaker.png',
   },
+  {
+    name: 'Karol Attekita',
+    description: 'Engenheira iOS na Riot Games',
+    image: '/speaker.png',
+  },
+  {
+    name: 'Karol Attekita',
+    description: 'Engenheira iOS na Riot Games',
+    image: '/speaker.png',
+  },
 ];
 
-const MainSpeakersDesktop: React.FC = () => {
+const SpeakersDesktop: React.FC = () => {
   const [hoveredSpeaker, setHoveredSpeaker] = useState<number>(0);
 
   const animationClasses = 'transition-all duration-300 ease-in-out';
 
   return (
-    <div className={`hidden md:flex mt-8 ${animationClasses} `}>
+    <div className={`flex items-start mt-8 ${animationClasses}`}>
       {speakers.map((speaker, index) => {
         const isHovered = hoveredSpeaker === index;
 
         return (
           <div
-            className={`flex flex-col gap-4 relative h-[550px] px-2 ${animationClasses} ${
-              isHovered ? 'flex-grow' : 'flex-shrink'
-            }`}
+            className={`hidden md:flex flex-col gap-4 relative h-[200px] px-2 ${animationClasses} flex-1`}
             key={index}
             onMouseEnter={() => setHoveredSpeaker(index)}
             onClick={() => setHoveredSpeaker(index)}
             style={{
-              flexBasis: isHovered ? '40%' : '20%',
+              // 6 items per row
+              flexBasis: isHovered ? '16.666%' : '8.333%',
               transition: 'flex-basis 0.3s ease-in-out',
             }}
           >
@@ -69,7 +78,7 @@ const MainSpeakersDesktop: React.FC = () => {
                   isHovered ? 'opacity-100' : 'opacity-0'
                 }`}
               >
-                <p className='font font-bold text-white font-kdam text-4xl uppercase'>
+                <p className='font font-bold text-white font-kdam text-2xl uppercase'>
                   {speaker.name}
                 </p>
                 <p className='text-sm text-white'>{speaker.description}</p>
@@ -82,7 +91,7 @@ const MainSpeakersDesktop: React.FC = () => {
   );
 };
 
-const MainSpeakersMobile: React.FC = () => {
+const SpeakersMobile: React.FC = () => {
   return (
     <Carousel
       className='md:hidden'
@@ -92,6 +101,7 @@ const MainSpeakersMobile: React.FC = () => {
           stopOnInteraction: false,
           stopOnMouseEnter: true,
           startDelay: 0,
+          direction: 'backward',
         }),
       ]}
       opts={{
@@ -101,8 +111,8 @@ const MainSpeakersMobile: React.FC = () => {
     >
       <CarouselContent>
         {speakers.map((speaker, index) => (
-          <CarouselItem key={index} className='pl-0'>
-            <div className='aspect-video bg-zinc-200'>
+          <CarouselItem key={index} className='basis-1/3 pl-0'>
+            <div className='aspect-[1/1] bg-zinc-200'>
               <Image
                 className='w-full h-full object-cover transition-all duration-75 cursor-pointer'
                 src={'/speaker.png'}
@@ -113,10 +123,10 @@ const MainSpeakersMobile: React.FC = () => {
               />
             </div>
             <div className='px-4 py-2 bg-purple-900'>
-              <p className='font font-bold text-white font-kdam text-xl uppercase'>
+              <p className='font-bold text-white text-sm font-kdam uppercase'>
                 {speaker.name}
               </p>
-              <p className='text-sm text-white'>{speaker.description}</p>
+              <p className='text-xs text-white'>{speaker.description}</p>
             </div>
           </CarouselItem>
         ))}
@@ -125,13 +135,13 @@ const MainSpeakersMobile: React.FC = () => {
   );
 };
 
-const MainSpeakers: React.FC = () => {
+const Speakers: React.FC = () => {
   return (
     <>
-      <MainSpeakersDesktop />
-      <MainSpeakersMobile />
+      <SpeakersDesktop />
+      <SpeakersMobile />
     </>
   );
 };
 
-export default MainSpeakers;
+export default Speakers;

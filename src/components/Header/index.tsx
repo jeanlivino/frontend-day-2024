@@ -40,16 +40,16 @@ const Header: React.FC = () => {
             />
           </div>
           <div className='flex gap-3 justify-center md:gap-8 items-center uppercase'>
-            <a href='#' className='text-white'>
+            <a href='#event' className='text-white'>
               O evento
             </a>
-            <a href='#' className='text-white'>
+            <a href='#speakers' className='text-white'>
               Quem vai
             </a>
-            <a href='#' className='text-white'>
+            <a href='#schedule' className='text-white'>
               Agenda
             </a>
-            <a href='#' className='text-white'>
+            <a href='#faq' className='text-white'>
               FAQ
             </a>
             <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto z-10'>

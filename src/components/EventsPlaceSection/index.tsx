@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 function EventsPlaceSection() {
   return (
-    <section className="container mt-16">
+    <section className="container mt-10 relative top-24">
       <div className="flex items-center gap-36 w-full max-lg:flex-col">
         <Image
           src="/event-place.png"
@@ -12,7 +12,7 @@ function EventsPlaceSection() {
           width={550}
           height={400}
         />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 mb-24">
           <h2 className="font-kdam uppercase text-5xl text-purple-950 mb-9">
             Local do Evento
           </h2>
@@ -24,7 +24,7 @@ function EventsPlaceSection() {
               Av. Monsenhor Tabosa, 740 <br /> Centro – Fortaleza – CE
             </p>
             <Button
-              className="border border-purple-950 bg-white text-purple-950 font-semibold text-base max-w-48 hover:bg-purple-600 hover:text-slate-50 hover:border-l-purple-700"
+              className="border border-purple-950 bg-white text-purple-950 font-semibold text-base max-w-48 hover:bg-purple-600 hover:text-slate-50 hover:borer-l-purple-700 mb-8"
               size={"lg"}
             >
               Como chegar

@@ -20,8 +20,8 @@ export default function Home() {
       <PhotosCarousel />
       <EventsPlaceSection />
       <LastEdtionSection />
-      <FaqSection />
       <SpeakersSection />
+      <FaqSection />
     </main>
   );
 }

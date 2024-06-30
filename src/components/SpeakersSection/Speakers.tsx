@@ -4,8 +4,6 @@ import { useState } from 'react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import Image from 'next/image';
 
-import useIsDesktop from '@/hooks/useIsDesktop';
-
 import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
 
 const speakers = [
@@ -53,7 +51,7 @@ const SpeakersDesktop: React.FC = () => {
 
         return (
           <div
-            className={`flex flex-col gap-4 relative h-[200px] px-2 ${animationClasses} flex-1`}
+            className={`hidden md:flex flex-col gap-4 relative h-[200px] px-2 ${animationClasses} flex-1`}
             key={index}
             onMouseEnter={() => setHoveredSpeaker(index)}
             onClick={() => setHoveredSpeaker(index)}
@@ -96,6 +94,7 @@ const SpeakersDesktop: React.FC = () => {
 const SpeakersMobile: React.FC = () => {
   return (
     <Carousel
+      className='md:hidden'
       plugins={[
         AutoScroll({
           speed: 0.5,
@@ -137,13 +136,12 @@ const SpeakersMobile: React.FC = () => {
 };
 
 const Speakers: React.FC = () => {
-  const isDesktop = useIsDesktop();
-
-  if (isDesktop) {
-    return <SpeakersDesktop />;
-  }
-
-  return <SpeakersMobile />;
+  return (
+    <>
+      <SpeakersDesktop />
+      <SpeakersMobile />
+    </>
+  );
 };
 
 export default Speakers;

@@ -102,10 +102,7 @@ const MainSpeakersMobile: React.FC = () => {
     >
       <CarouselContent>
         {speakers.map((speaker, index) => (
-          <CarouselItem
-            key={index}
-            className='md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-0'
-          >
+          <CarouselItem key={index} className='pl-0'>
             <div className='aspect-video bg-zinc-200'>
               <Image
                 className='w-full h-full object-cover transition-all duration-75 cursor-pointer'

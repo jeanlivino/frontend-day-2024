@@ -7,7 +7,7 @@ import {
 
 export default function FaqSection() {
   return (
-    <section className='flex flex-col justify-center items-center w-full bg-black'>
+    <section id='faq' className='flex flex-col justify-center items-center w-full bg-black'>
       <div className='flex justify-center items-center bg-purple-gradient w-full py-12 lg:py-0 lg:h-36'>
         <div className='flex flex-col lg:flex-row items-center w-full max-w-4xl gap-12 px-6 lg:px-0'>
           <p className='font-kdam uppercase text-4xl text-white whitespace-nowrap text-center lg:text-left'>

@@ -2,7 +2,7 @@ function LastEdtionSection() {
   return (
     <section className="flex flex-col items-center">
       <div className="bg-black w-full min-h-[50vh] flex items-center justify-center">
-        <h2 className="bg-blue-gradient text-transparent bg-clip-text text-4xl uppercase font-kdam max-lg:text-4xl text-center">
+        <h2 className="gradient-text bg-gradient-to-r from-blue-400 to-white text-transparent bg-clip-text text-4xl uppercase font-kdam max-lg:text-4xl text-center">
           Oque rolou na edição anterior
         </h2>
       </div>

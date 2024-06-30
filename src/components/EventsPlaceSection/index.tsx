@@ -7,6 +7,7 @@ function EventsPlaceSection() {
     <section className="container mt-16">
       <div className="flex items-center gap-36 w-full max-lg:flex-col">
         <Image
+        className="relative top-14"
           src="/event-place.png"
           alt="Fábrica de Negócios"
           width={550}

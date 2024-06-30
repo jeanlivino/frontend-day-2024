@@ -11,7 +11,7 @@ import PhotosCarousel from '@/components/PhotosCarousel';
 import SpeakersSection from '@/components/SpeakersSection';
 import SponsorsSection from '@/components/SponsorsSection';
 import { getSiteData } from '@/services/site';
-// export const revalidate = 60;
+export const revalidate = 60;
 
 export default async function Home() {
   const data = await getSiteData();

@@ -112,7 +112,7 @@ const SpeakersMobile: React.FC = () => {
       <CarouselContent>
         {speakers.map((speaker, index) => (
           <CarouselItem key={index} className='basis-1/3 pl-0'>
-            <div className='aspect-video bg-zinc-200'>
+            <div className='aspect-[1/1] bg-zinc-200'>
               <Image
                 className='w-full h-full object-cover transition-all duration-75 cursor-pointer'
                 src={'/speaker.png'}
@@ -126,7 +126,7 @@ const SpeakersMobile: React.FC = () => {
               <p className='font-bold text-white text-sm font-kdam uppercase'>
                 {speaker.name}
               </p>
-              <p className='text-sm text-white'>{speaker.description}</p>
+              <p className='text-xs text-white'>{speaker.description}</p>
             </div>
           </CarouselItem>
         ))}

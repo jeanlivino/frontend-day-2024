@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`px-4 py-8 md:p-8 fixed w-full ${
+      className={`px-4 py-8 md:p-8 fixed z-20 w-full ${
         hasScrolled ? 'shadow-md bg-slate-900' : ''
       }`}
     >

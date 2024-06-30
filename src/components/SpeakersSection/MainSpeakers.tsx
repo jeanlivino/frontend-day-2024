@@ -1,6 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Image from 'next/image';
+
+import useIsDesktop from '@/hooks/useIsDesktop';
+
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel';
 
 const speakers = [
   {
@@ -25,7 +31,7 @@ const speakers = [
   },
 ];
 
-const MainSpeakers: React.FC = () => {
+const MainSpeakersDesktop: React.FC = () => {
   const [hoveredSpeaker, setHoveredSpeaker] = useState<number>(0);
 
   const animationClasses = 'transition-all duration-300 ease-in-out';
@@ -76,6 +82,61 @@ const MainSpeakers: React.FC = () => {
       })}
     </div>
   );
+};
+
+const MainSpeakersMobile: React.FC = () => {
+  return (
+    <Carousel
+      plugins={[
+        AutoScroll({
+          speed: 0.5,
+          stopOnInteraction: false,
+          stopOnMouseEnter: true,
+          startDelay: 0,
+        }),
+      ]}
+      opts={{
+        loop: true,
+        active: true,
+      }}
+    >
+      <CarouselContent>
+        {speakers.map((speaker, index) => (
+          <CarouselItem
+            key={index}
+            className='md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-0'
+          >
+            <div className='aspect-video bg-zinc-200'>
+              <Image
+                className='w-full h-full object-cover transition-all duration-75 cursor-pointer'
+                src={'/speaker.png'}
+                alt=''
+                width={0}
+                height={0}
+                sizes='100vw'
+              />
+            </div>
+            <div className='px-4 py-2 bg-purple-900'>
+              <p className='font font-bold text-white font-kdam text-xl uppercase'>
+                {speaker.name}
+              </p>
+              <p className='text-sm text-white'>{speaker.description}</p>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
+  );
+};
+
+const MainSpeakers: React.FC = () => {
+  const isDesktop = useIsDesktop();
+
+  if (isDesktop) {
+    return <MainSpeakersDesktop />;
+  }
+
+  return <MainSpeakersMobile />;
 };
 
 export default MainSpeakers;

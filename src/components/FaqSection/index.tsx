@@ -31,7 +31,7 @@ const FaqSection: React.FC<Props> = ({ faq }) => {
             <div className='flex flex-col lg:flex-row items-center text-purple-500 gap-2'>
               <div className='flex gap-2'>
                 <p className='uppercase text-center text-sm whitespace-nowrap'>
-                  AMANDAES MERALDO
+                  Amanda Esmeraldo
                 </p>
                 <p className='hidden lg:flex'>-</p>
               </div>

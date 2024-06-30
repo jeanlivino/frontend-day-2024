@@ -26,7 +26,7 @@ function InfosSection() {
           </div>
         </div>
       </div>
-      <div className='flex container max-lg:flex-col justify-center items-end mt-12'>
+      <div className='flex container justify-center items-end mt-12'>
         <Image
           className='self-end max-w-[550px] hidden md:block w-full h-auto'
           src='/astronaut.png'
@@ -35,7 +35,7 @@ function InfosSection() {
           height={0}
           sizes='100vw'
         />
-        <div className='grid grid-cols-2 max-xl:grid-cols-1 gap-6 self-center text-slate-50 uppercase pb-8'>
+        <div className='grid md:grid-cols-2 grid-cols-1 gap-6 self-center text-slate-50 uppercase pb-8'>
           <div className='flex flex-col gap-1'>
             <h2 className='font-kdam text-3xl'>12 Horas</h2>
             <p className='text-purple-600 text-md'>De evento</p>

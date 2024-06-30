@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const SponsorsSection: React.FC = () => {
   return (
-    <div className='container mx-auto mt-4 p-8'>
+    <div className='container mx-auto mt-4 mb-8 p-8'>
       <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase'>
         Patrocínio
       </h2>

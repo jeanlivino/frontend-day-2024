@@ -91,7 +91,7 @@ const MainSpeakersMobile: React.FC<Props> = ({ speakers }) => {
             <div className='aspect-video bg-zinc-200'>
               <Image
                 className='w-full h-full object-cover transition-all duration-75 cursor-pointer'
-                src={'/speaker.png'}
+                src={speaker.image}
                 alt=''
                 width={0}
                 height={0}

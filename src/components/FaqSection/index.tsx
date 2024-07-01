@@ -25,13 +25,13 @@ const FaqSection: React.FC<Props> = ({ faq }) => {
           </p>
           <div className='flex flex-col lg:h-64 justify-center items-center border rounded-2xl bg-white w-full px-6 lg:px-12 tracking-[0.2rem] gap-4 p-6'>
             <p className='text-center lowercase'>
-              espaço aberto para os participantes apresentar em seus projetos
-              pessoais
+              Amei participar desse evento maravilhoso. Muito rico em conteúdo,
+              networking, surpresas… Simplesmente incrível.
             </p>
             <div className='flex flex-col lg:flex-row items-center text-purple-500 gap-2'>
               <div className='flex gap-2'>
                 <p className='uppercase text-center text-sm whitespace-nowrap'>
-                  Amanda Esmeraldo
+                  Samuel Freitas
                 </p>
                 <p className='hidden lg:flex'>-</p>
               </div>

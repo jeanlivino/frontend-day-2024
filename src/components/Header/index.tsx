@@ -46,9 +46,9 @@ const Header: React.FC = () => {
             <a href='#speakers' className='text-white'>
               Quem vai
             </a>
-            {/* <a href='#schedule' className='text-white'>
+            <a href='/agenda' className='text-white'>
               Agenda
-            </a> */}
+            </a>
             <a href='#faq' className='text-white'>
               FAQ
             </a>

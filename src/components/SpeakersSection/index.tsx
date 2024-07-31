@@ -2,6 +2,8 @@
 
 import { Speaker } from '@/types';
 
+import { Button } from '../ui/button';
+
 import MainSpeakers from './MainSpeakers';
 import Speakers from './Speakers';
 
@@ -21,6 +23,12 @@ const SpeakersSection: React.FC<Props> = ({ speakers }) => {
       <p className='text-center mb-8'>Palestrantes locais e nacionais</p>
       <MainSpeakers speakers={keynotes} />
       <Speakers speakers={speakersList} />
+
+      <div className='flex justify-center mt-8'>
+        <Button variant='pink' size='lg'>
+          <a href='/agenda'>Ver agenda</a>
+        </Button>
+      </div>
     </div>
   );
 };

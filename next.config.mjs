@@ -22,6 +22,10 @@ const nextConfig = {
         source: '/agenda/:path*',
         destination: process.env.AGENDA_MF_URL || '',
       },
+      {
+        source: '/api/agenda',
+        destination: process.env.AGENDA_API_URL || '',
+      },
     ];
   },
 };

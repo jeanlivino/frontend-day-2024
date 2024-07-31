@@ -3,6 +3,7 @@
 import { Speaker } from '@/types';
 
 import MainSpeakers from './MainSpeakers';
+import Speakers from './Speakers';
 
 type Props = {
   speakers: Speaker[];
@@ -10,6 +11,7 @@ type Props = {
 
 const SpeakersSection: React.FC<Props> = ({ speakers }) => {
   const keynotes = speakers.filter((speaker) => speaker.keynote);
+  const speakersList = speakers.filter((speaker) => !speaker.keynote);
 
   return (
     <div id='speakers' className='container mx-auto my-16 md:my-4 md:pb-32'>
@@ -18,7 +20,7 @@ const SpeakersSection: React.FC<Props> = ({ speakers }) => {
       </h2>
       <p className='text-center mb-8'>Palestrantes locais e nacionais</p>
       <MainSpeakers speakers={keynotes} />
-      {/* <Speakers speakers={speakersList} /> */}
+      <Speakers speakers={speakersList} />
     </div>
   );
 };

@@ -16,6 +16,14 @@ const nextConfig = {
       },
     ],
   },
+  rewrites: async () => {
+    return [
+      {
+        source: '/agenda/:path*',
+        destination: process.env.AGENDA_MF_URL || '',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

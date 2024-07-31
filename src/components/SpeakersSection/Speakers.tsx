@@ -43,7 +43,7 @@ const Speakers: React.FC<Props> = ({ speakers: speakersList }) => {
       >
         <CarouselContent>
           {speakers.map((speaker, index) => (
-            <CarouselItem key={index} className='basis-1/3 pl-0 md:basis-[10%]'>
+            <CarouselItem key={index} className='basis-1/3 pl-0 md:basis-[13%]'>
               <div className='aspect-[1/1] bg-zinc-200 relative'>
                 <Image
                   className='w-full h-full object-cover transition-all duration-75 cursor-pointer'

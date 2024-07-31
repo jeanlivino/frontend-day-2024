@@ -58,7 +58,9 @@ const MainSpeakersDesktop: React.FC<Props> = ({ speakers }) => {
                 <p className='font font-bold text-white font-kdam text-4xl uppercase'>
                   {speaker.title}
                 </p>
-                <p className='text-sm text-white'>{speaker.role}</p>
+                <p className='text-sm text-white'>
+                  {speaker.role} | {speaker.company}
+                </p>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import InfosSection from '@/components/InfosSection';
 import LastEdtionSection from '@/components/LastEditionSection';
-import PartnersSection from '@/components/PaternsSection';
+import PartnersSection from '@/components/PartnersSection';
 import PhotosCarousel from '@/components/PhotosCarousel';
 import SpeakersSection from '@/components/SpeakersSection';
 import SponsorsSection from '@/components/SponsorsSection';

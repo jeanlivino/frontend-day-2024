@@ -14,7 +14,7 @@ const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
         <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8'>
           APOIO
         </h2>
-        <div className='flex flex-wrap justify-center items-center py-6 gap-6'>
+        <div className='flex gap-2 md:gap-16 flex-wrap justify-center items-center py-6'>
           {partners.map((sponsor, index) => (
             <a
               href={sponsor.link}
@@ -42,7 +42,7 @@ const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
         <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8'>
           COMUNIDADES PARCEIRAS
         </h2>
-        <div className='flex flex-wrap justify-center items-center py-6 gap-6'>
+        <div className='flex gap-2 md:gap-16 flex-wrap justify-center items-center py-6'>
           {communities.map((sponsor, index) => (
             <a
               href={sponsor.link}

@@ -52,9 +52,6 @@ const Header: React.FC = () => {
             <a href='#faq' className='text-white'>
               FAQ
             </a>
-            <a href='/midia-kit.pdf' className='text-white' target='_blank'>
-              Midia Kit
-            </a>
             <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto z-10'>
               <a href='https://eventos.frontendce.com.br/event/day/4'>
                 <Button variant='pink'>Inscreva-se agora</Button>

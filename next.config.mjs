@@ -26,6 +26,10 @@ const nextConfig = {
         source: '/api/agenda',
         destination: process.env.AGENDA_API_URL || '',
       },
+      {
+        source: '/meu-certificado/:path*',
+        destination: 'https://certificates-api.hackathon.frontenday.com.br/certificate/:path*',
+      }
     ];
   },
 };

@@ -46,7 +46,7 @@ const Header: React.FC = () => {
             <a href='https://go.frontendce.com.br/guia-do-participante' className='text-white'>
               Guia do participante
             </a>
-            <a href='/agenda' className='text-white'>
+            <a href='https://agenda.frontendday.com.br' className='text-white'>
               Agenda
             </a>
             <a href='#faq' className='text-white'>

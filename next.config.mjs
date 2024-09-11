@@ -16,12 +16,17 @@ const nextConfig = {
       },
     ],
   },
-  rewrites: async () => {
+  redirects: async () => {
     return [
       {
-        source: '/agenda/:path*',
-        destination: process.env.AGENDA_MF_URL || '',
+        source: '/agenda',
+        destination: 'https://agenda.frontendday.com.br',
+        permanent: true,
       },
+    ];
+  },
+  rewrites: async () => {
+    return [
       {
         source: '/api/agenda',
         destination: process.env.AGENDA_API_URL || '',

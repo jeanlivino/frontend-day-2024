@@ -39,12 +39,12 @@ const Header: React.FC = () => {
               height={300}
             />
           </div>
-          <div className='flex gap-3 justify-center md:gap-8 items-center uppercase'>
+          <div className='flex gap-6 flex-wrap justify-center md:gap-8 items-center uppercase text-center'>
             <a href='#event' className='text-white'>
               O evento
             </a>
-            <a href='#speakers' className='text-white'>
-              Quem vai
+            <a href='https://go.frontendce.com.br/guia-do-participante' className='text-white'>
+              Guia do participante
             </a>
             <a href='/agenda' className='text-white'>
               Agenda

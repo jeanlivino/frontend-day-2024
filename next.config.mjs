@@ -23,6 +23,11 @@ const nextConfig = {
         destination: 'https://agenda.frontendday.com.br',
         permanent: true,
       },
+      {
+        source: 'avaliacao-palestras',
+        destination: 'https://avaliacao.frontendday.com.br',
+        permanent: true,
+      },
     ];
   },
   rewrites: async () => {

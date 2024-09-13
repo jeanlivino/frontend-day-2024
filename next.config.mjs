@@ -24,7 +24,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: 'avaliacao-palestras',
+        source: '/avaliacao-palestras',
         destination: 'https://avaliacao.frontendday.com.br',
         permanent: true,
       },

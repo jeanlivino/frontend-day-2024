@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import { Button } from '../ui/button';
 
 const Header: React.FC = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -25,9 +24,8 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`px-4 py-8 md:p-8 fixed z-20 w-full ${
-        hasScrolled ? 'shadow-md bg-slate-900' : ''
-      }`}
+      className={`px-4 py-8 md:p-8 fixed z-20 w-full ${hasScrolled ? 'shadow-md bg-slate-900' : ''
+        }`}
     >
       <div className='container mx-auto'>
         <div className='flex gap-4 justify-center md:justify-between'>
@@ -43,8 +41,8 @@ const Header: React.FC = () => {
             <a href='#event' className='text-white'>
               O evento
             </a>
-            <a href='https://go.frontendce.com.br/guia-do-participante' className='text-white'>
-              Guia do participante
+            <a href='https://eventos.frontendce.com.br/certificates' className='text-white'>
+              Certificados
             </a>
             <a href='https://agenda.frontendday.com.br' className='text-white'>
               Agenda
@@ -52,11 +50,6 @@ const Header: React.FC = () => {
             <a href='#faq' className='text-white'>
               FAQ
             </a>
-            <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto z-10'>
-              <a href='https://eventos.frontendce.com.br/event/day/4'>
-                <Button variant='pink'>Inscreva-se agora</Button>
-              </a>
-            </div>
           </div>
         </div>
       </div>

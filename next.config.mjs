@@ -38,7 +38,7 @@ const nextConfig = {
       },
       {
         source: '/meu-certificado/:path*',
-        destination: 'https://certificates-api.hackathon.frontenday.com.br/certificate/:path*',
+        destination: 'https://fend-certificates-api.onrender.com/certificate/:path*',
       }
     ];
   },

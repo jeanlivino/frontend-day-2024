@@ -44,8 +44,8 @@ const Header: React.FC = () => {
             <a href='https://eventos.frontendce.com.br/certificates' className='text-white'>
               Certificados
             </a>
-            <a href='https://agenda.frontendday.com.br' className='text-white'>
-              Agenda
+            <a href='/midia-kit.pdf' target="_blank" className='text-white'>
+              Midia kit 2025
             </a>
             <a href='#faq' className='text-white'>
               FAQ

@@ -6,8 +6,8 @@ type InfosType = {
 export function Infos({ title, description }: InfosType) {
   return (
     <div className="flex flex-col gap-1">
-      <h2 className="font-kdam text-3xl">{title}</h2>
-      <p className="text-purple-600 text-md">{description}</p>
+      <h2 className="text-primary font-kdam text-3xl">{title}</h2>
+      <p className=" text-md">{description}</p>
     </div>
   );
 }

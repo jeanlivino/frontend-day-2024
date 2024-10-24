@@ -53,9 +53,9 @@ const Speakers: React.FC<Props> = ({ speakers: speakersList }) => {
                   height={0}
                   sizes='100vw'
                 />
-                <div className='absolute top-0 left-0 w-full inset-0 flex flex-col justify-end bg-purple-gradient-opacity'></div>
+                <div className='absolute top-0 left-0 w-full inset-0 flex flex-col justify-end bg-primary-gradient-opacity'></div>
               </div>
-              <div className='px-4 py-2 bg-purple-900 min-h-[64px]'>
+              <div className='px-4 py-2 bg-primary-900 min-h-[64px]'>
                 <p className='font-bold text-white text-xs font-kdam uppercase line-clamp-1'>
                   {speaker.title}
                 </p>

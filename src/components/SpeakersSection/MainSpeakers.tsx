@@ -24,9 +24,8 @@ const MainSpeakersDesktop: React.FC<Props> = ({ speakers }) => {
 
         return (
           <div
-            className={`flex flex-col gap-4 relative h-[550px] px-2 ${animationClasses} ${
-              isHovered ? 'flex-grow' : 'flex-shrink'
-            }`}
+            className={`flex flex-col gap-4 relative h-[550px] px-2 ${animationClasses} ${isHovered ? 'flex-grow' : 'flex-shrink'
+              }`}
             key={index}
             onMouseEnter={() => setHoveredSpeaker(index)}
             onClick={() => setHoveredSpeaker(index)}
@@ -41,19 +40,16 @@ const MainSpeakersDesktop: React.FC<Props> = ({ speakers }) => {
               width={0}
               height={0}
               sizes='100vw'
-              className={`w-full h-full object-cover ${animationClasses} ${
-                !isHovered ? 'filter grayscale' : ''
-              }`}
+              className={`w-full h-full object-cover ${animationClasses} ${!isHovered ? 'filter grayscale' : ''
+                }`}
             />
             <div
-              className={`absolute top-0 left-2 w-[calc(100%-1rem)] inset-0 flex flex-col justify-end ${animationClasses} ${
-                !isHovered ? 'bg-purple-gradient-opacity' : 'bg-black-gradient'
-              }`}
+              className={`absolute top-0 left-2 w-[calc(100%-1rem)] inset-0 flex flex-col justify-end ${animationClasses} ${!isHovered ? 'bg-primary-gradient-opacity' : 'bg-black-gradient'
+                }`}
             >
               <div
-                className={`transition-opacity duration-300 delay-100  ease-in-out p-4 ${
-                  isHovered ? 'opacity-100' : 'opacity-0'
-                }`}
+                className={`transition-opacity duration-300 delay-100  ease-in-out p-4 ${isHovered ? 'opacity-100' : 'opacity-0'
+                  }`}
               >
                 <p className='font font-bold text-white font-kdam text-4xl uppercase'>
                   {speaker.title}
@@ -100,7 +96,7 @@ const MainSpeakersMobile: React.FC<Props> = ({ speakers }) => {
                 sizes='100vw'
               />
             </div>
-            <div className='px-4 py-2 bg-purple-900'>
+            <div className='px-4 py-2 bg-primary-900'>
               <p className='font font-bold text-white font-kdam text-xl uppercase'>
                 {speaker.title}
               </p>

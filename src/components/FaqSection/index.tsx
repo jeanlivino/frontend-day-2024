@@ -15,9 +15,9 @@ const FaqSection: React.FC<Props> = ({ faq }) => {
   return (
     <section
       id='faq'
-      className='flex flex-col justify-center items-center w-full bg-black'
+      className='flex flex-col justify-center items-center w-full bg-noise pb-48'
     >
-      <div className='flex justify-center items-center bg-purple-gradient w-full py-12 lg:py-0 lg:h-36'>
+      <div className='flex justify-center items-center bg-primary-gradient w-full py-12 lg:py-0 lg:h-36'>
         <div className='flex flex-col lg:flex-row items-center w-full max-w-4xl gap-12 px-6 lg:px-0'>
           <p className='font-kdam uppercase text-4xl text-white whitespace-nowrap text-center lg:text-left'>
             impacto <br />
@@ -28,7 +28,7 @@ const FaqSection: React.FC<Props> = ({ faq }) => {
               Amei participar desse evento maravilhoso. Muito rico em conteúdo,
               networking, surpresas… Simplesmente incrível.
             </p>
-            <div className='flex flex-col lg:flex-row items-center text-purple-500 gap-2'>
+            <div className='flex flex-col lg:flex-row items-center text-primary gap-2'>
               <div className='flex gap-2'>
                 <p className='uppercase text-center text-sm whitespace-nowrap'>
                   Samuel Freitas
@@ -41,7 +41,7 @@ const FaqSection: React.FC<Props> = ({ faq }) => {
         </div>
       </div>
       <div className='w-full max-w-5xl py-12 lg:pt-36'>
-        <h3 className='text-center font-kdam text-3xl uppercase text-purple-500 pb-12'>
+        <h3 className='text-center font-kdam text-3xl uppercase text-primary pb-12'>
           FAQ - PERGUNTAS FREQUENTES
         </h3>
         <div className='w-full text-white px-6 lg:px-0'>
@@ -54,7 +54,7 @@ const FaqSection: React.FC<Props> = ({ faq }) => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className='w-full bg-purple-gradient rounded-xl px-6 text-lg'
+                className='w-full bg-primary-gradient rounded-xl px-6 text-lg'
               >
                 <AccordionTrigger>{item.question}</AccordionTrigger>
                 <AccordionContent>

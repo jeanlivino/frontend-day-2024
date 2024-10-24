@@ -6,10 +6,8 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import InfosSection from '@/components/InfosSection';
 import LastEdtionSection from '@/components/LastEditionSection';
-import PartnersSection from '@/components/PartnersSection';
 import PhotosCarousel from '@/components/PhotosCarousel';
 import SpeakersSection from '@/components/SpeakersSection';
-import SponsorsSection from '@/components/SponsorsSection';
 import { getSiteData } from '@/services/site';
 export const revalidate = 60;
 
@@ -21,17 +19,17 @@ export default async function Home() {
       <Header />
       <HeroSection />
       <CountdownSection />
-      <SponsorsSection sponsors={data.sponsors} />
+      {/* <SponsorsSection sponsors={data.sponsors} /> */}
       <InfosSection />
       <PhotosCarousel images={data.images} />
       <EventsPlaceSection />
       <LastEdtionSection />
       <SpeakersSection speakers={data.speakers} />
       <FaqSection faq={data.faq} />
-      <PartnersSection
+      {/* <PartnersSection
         partners={data.partners}
         communities={data.communities}
-      />
+      /> */}
       <Footer />
     </main>
   );

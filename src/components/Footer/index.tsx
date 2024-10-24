@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className='lg:relative flex flex-col justify-end items-center bg-black lg:h-56 lg:p-6'>
-      <div className='lg:absolute flex flex-col items-center justify-center gap-6 lg:rounded-3xl p-12 lg:-top-28 bg-purple-gradient w-full max-w-5xl'>
+      <div className='lg:absolute flex flex-col items-center justify-center gap-6 lg:rounded-3xl p-12 lg:-top-28 bg-primary-gradient w-full max-w-5xl'>
         <div className='space-y-6 lg:space-y-2'>
           <p className='text-center lg:text-left text-white'>Realização</p>
           <div className='flex flex-col lg:flex-row w-min whitespace-nowrap items-center gap-12 lg:gap-20'>

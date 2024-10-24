@@ -13,7 +13,7 @@ function EventsPlaceSection() {
           height={400}
         />
         <div className='flex justify-center flex-col gap-2'>
-          <h2 className='font-kdam uppercase text-3xl text-purple-950 mb-4'>
+          <h2 className='font-kdam uppercase text-3xl text-primary-950 mb-4'>
             Local do Evento
           </h2>
           <h3 className='font-bold text-pink-600 text-xl'>
@@ -24,7 +24,7 @@ function EventsPlaceSection() {
               Av. Monsenhor Tabosa, 740 <br /> Centro – Fortaleza – CE
             </p>
             <Button
-              className='border border-purple-950 bg-white text-purple-950 font-semibold text-base max-w-48 hover:bg-purple-600 hover:text-slate-50 hover:border-l-purple-700'
+              className='border border-primary-950 bg-white text-primary-950 font-semibold text-base max-w-48 hover:bg-primary-600 hover:text-slate-50 hover:border-l-primary-700'
               size={'lg'}
             >
               Como chegar

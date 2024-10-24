@@ -11,7 +11,7 @@ const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
   return (
     <section className='py-6 lg:pb-48 space-y-12 '>
       <div className='container'>
-        <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8'>
+        <h2 className='text-3xl font-kdam font-bold text-center  uppercase my-8'>
           APOIO
         </h2>
         <div className='flex gap-2 md:gap-16 flex-wrap justify-center items-center py-6'>
@@ -39,7 +39,7 @@ const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
         </div>
       </div>
       <div className='container'>
-        <h2 className='text-3xl font-kdam font-bold text-center text-purple-900 uppercase my-8'>
+        <h2 className='text-3xl font-kdam font-bold text-center  uppercase my-8'>
           COMUNIDADES PARCEIRAS
         </h2>
         <div className='flex gap-2 md:gap-16 flex-wrap justify-center items-center py-6'>

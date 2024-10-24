@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+	<rect width="100%" height="100%" fill="black" />
+	<filter id="noiseFilter">
+		<feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="4" stitchTiles="stitch" />
+		<feColorMatrix type="saturate" values="0" />
+	</filter>
+	<rect width="100%" height="100%" filter="url(#noiseFilter)" opacity="0.15" />
+</svg>

@@ -24,7 +24,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`px-4 py-8 md:p-8 fixed z-20 w-full ${hasScrolled ? 'shadow-md bg-slate-900' : ''
+      className={`px-4 py-8 md:p-8 fixed w-full z-40 ${hasScrolled ? 'shadow-md bg-slate-900' : ''
         }`}
     >
       <div className='container mx-auto'>
@@ -41,9 +41,9 @@ const Header: React.FC = () => {
             <a href='#event' className='text-white'>
               O evento
             </a>
-            <a href='https://eventos.frontendce.com.br/certificates' className='text-white'>
+            {/* <a href='https://eventos.frontendce.com.br/certificates' className='text-white'>
               Certificados
-            </a>
+            </a> */}
             <a href='/midia-kit.pdf' target="_blank" className='text-white'>
               Midia kit 2025
             </a>

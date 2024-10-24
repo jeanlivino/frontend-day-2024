@@ -85,6 +85,7 @@ const config = {
       backgroundImage: {
         galaxy: "url('/bg-galaxy.jpg')",
         noise: "url('/bg-noise.svg')",
+        'orange-blur': "url('/orange-blur.png')",
         'primary-gradient': 'linear-gradient(to right, #FFB015, #FF8E1A)',
         'black-gradient':
           'linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0))',

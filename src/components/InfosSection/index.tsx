@@ -6,7 +6,7 @@ function InfosSection() {
   return (
     <section
       id='event'
-      className='relative z-10 mt-[-260px] sm:mt-[-120px] flex items-center flex-col gap-10 bg-noise min-h-[50vh] bg-no-repeat bg-cover pt-8'
+      className='relative z-10 mt-[-260px] sm:mt-[-120px] flex items-center flex-col gap-10 bg-noise min-h-[50vh] bg-no-repeat bg-cover pt-8 overflow-hidden'
     >
       <div className='pt-[240px] sm:pt-[100px] flex justify-center items-center max-w-[960px] mx-auto mt-10'>
         <div className='flex max-lg:flex-col max-lg:text-center gap-11 justify-center items-center w-full'>
@@ -69,9 +69,9 @@ function InfosSection() {
         />
       </div>
       {/* </div> */}
-      <div className="absolute w-[35%] h-[35%] md:w-[50%] md:h-[50%] right-[-7%] bottom-0 z-2 scale-[-1] rotate-90">
+      {/* <div className="absolute w-[35%] h-[35%] md:w-[50%] md:h-[50%] right-[-7%] bottom-0 z-2 scale-[-1] rotate-90">
         <Image src="/orange-blur.png" alt="Orange blur" width={0} height={0} sizes="100vw" className="w-full h-full object-contain object-bottom sm:object-left sm:object-cover" />
-      </div>
+      </div> */}
     </section>
   );
 }

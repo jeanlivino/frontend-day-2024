@@ -9,17 +9,17 @@ import './globals.css';
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
-  title: 'FrontEnd Day - Fortaleza 2024',
+  title: 'FrontEnd Day - Fortaleza 2025',
   description:
-    'Um dia inteiro para você ampliar suas conexões. 14 de Setembro de 2024',
+    'Um dia inteiro para você ampliar suas conexões. 20 de Setembro de 2025',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://frontendday.com.br',
     images: [
       {
-        url: 'https://frontendday.descompliqueapps.com.br/2024/wp-content/uploads/2024/06/banner-fend.png',
-        alt: 'FrontEnd Day - Fortaleza 2024',
+        url: '/banner.jpg',
+        alt: 'FrontEnd Day - Fortaleza 2025',
       },
     ],
   },

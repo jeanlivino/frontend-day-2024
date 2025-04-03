@@ -45,7 +45,7 @@ const Header: React.FC = () => {
             </a>
             <a
               target='_blank'
-              href='https://descompliquedigital.com.br/cota-especial-fend-2025'
+              href='/cota-especial-frontendday-2025.pdf'
               className='text-white'
             >
               COTA ESPECIAL

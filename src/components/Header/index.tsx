@@ -43,9 +43,12 @@ const Header: React.FC = () => {
             <a href='#event' className='text-white'>
               O evento
             </a>
-            {/* <a href='https://eventos.frontendce.com.br/certificates' className='text-white'>
-              Certificados
-            </a> */}
+            <a
+              href='https://descompliquedigital.com.br/cota-especial-fend-2025'
+              className='text-white'
+            >
+              COTA ESPECIAL
+            </a>
             <a href='/midia-kit.pdf' target='_blank' className='text-white'>
               Midia kit 2025
             </a>

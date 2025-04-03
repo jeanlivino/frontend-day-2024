@@ -44,6 +44,7 @@ const Header: React.FC = () => {
               O evento
             </a>
             <a
+              target='_blank'
               href='https://descompliquedigital.com.br/cota-especial-fend-2025'
               className='text-white'
             >

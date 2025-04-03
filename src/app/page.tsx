@@ -1,3 +1,4 @@
+import CountdownSection from '@/components/CountdownSection';
 import EventsPlaceSection from '@/components/EventsPlaceSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
@@ -17,7 +18,7 @@ export default async function Home() {
     <main>
       <Header />
       <HeroSection />
-      {/* <CountdownSection /> */}
+      <CountdownSection />
       {/* <SponsorsSection sponsors={data.sponsors} /> */}
       <InfosSection />
       <PhotosCarousel images={data.images} />

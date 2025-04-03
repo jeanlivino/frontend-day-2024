@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { Button } from '../ui/button';
+
 import { Infos } from './Infos';
 
 function InfosSection() {
@@ -23,15 +25,14 @@ function InfosSection() {
               diversas áreas da tecnologia e empresas parceiras para levar alto
               volume de conhecimento, conexão e networking para os participantes
             </p>
-
           </div>
         </div>
       </div>
-      {/* <a href='https://eventos.frontendce.com.br/event/day/4'>
+      <a href='https://eventos.frontendce.com.br/event/front-end-day-2025'>
         <Button className='mt-4 text-lg' size='lg'>
-          Ingressos
+          PRÉ-VENDA
         </Button>
-      </a> */}
+      </a>
       {/* <div className='flex container justify-center items-end mt-12'>
         <Image
           className='self-end max-w-[550px] hidden md:block w-full h-auto'
@@ -43,25 +44,13 @@ function InfosSection() {
         /> */}
       <div className='my-8 grid md:grid-cols-2 grid-cols-1 gap-6 self-center text-slate-50 uppercase pb-8'>
         <Infos title='12 Horas' description='de evento' />
-        <Infos title='Mentorias' description="gratuitas para grupos" />
-        <Infos
-          title='+1200 Pessoas'
-          description='participantes'
-        />
-        <Infos
-          title='espaço comunidades'
-          description='acesso a groups'
-        />
+        <Infos title='Mentorias' description='gratuitas para grupos' />
+        <Infos title='+1200 Pessoas' description='participantes' />
+        <Infos title='espaço comunidades' description='acesso aos grupos' />
         <Infos title='Feira de negócios' description='exposição de empresas' />
-        <Infos title='Espaço english' description='comunicação 100% em inglês' />
-        <Infos
-          title='trilha exclusiva'
-          description='diversos conteúdos'
-        />
-        <Infos
-          title='coworking'
-          description='ambiente exclusivo'
-        />
+        {/* <Infos title='Espaço english' description='comunicação 100% em inglês' /> */}
+        {/* <Infos title='trilha exclusiva' description='diversos conteúdos' /> */}
+        <Infos title='coworking' description='ambiente exclusivo' />
         <Infos title='Experiências' description='Ativações instagramavéis' />
         <Infos
           title='Studio de fotos'

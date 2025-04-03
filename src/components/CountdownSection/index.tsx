@@ -7,7 +7,7 @@ import TimeCard from './TimeCard';
 
 const CountdownSection: React.FC = () => {
   const { days, hours, minutes, seconds } = useCountdown(
-    new Date('2025-05-31T08:00:00-03:00')
+    new Date('2025-09-20T08:00:00-03:00')
   );
 
   return (

@@ -29,12 +29,12 @@ const HeroSection: React.FC = () => {
 
             <div className='container mx-auto'>
               <h2 className='text-2xl md:text-4xl mt-8 md:mt-20 font-kdam font-bold text-center tracking-widest text-white uppercase'>
-                Em Breve
+                20 de setembro | Fortaleza
               </h2>
-              {/* <p className='text-center text-slate-300 mt-4'>
+              <p className='text-center text-slate-300 mt-4'>
                 08h às 20h | Fábrica de Negócios - Av. Monsenhor Tabosa, 740 -
                 Centro
-              </p> */}
+              </p>
             </div>
           </div>
         </div>

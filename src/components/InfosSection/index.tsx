@@ -30,7 +30,7 @@ function InfosSection() {
       </div>
       <a href='https://eventos.frontendce.com.br/event/front-end-day-2025'>
         <Button className='mt-4 text-lg' size='lg'>
-          PRÉ-VENDA
+          ingressos
         </Button>
       </a>
       {/* <div className='flex container justify-center items-end mt-12'>
@@ -44,18 +44,20 @@ function InfosSection() {
         /> */}
       <div className='my-8 grid md:grid-cols-2 grid-cols-1 gap-6 self-center text-slate-50 uppercase pb-8'>
         <Infos title='12 Horas' description='de evento' />
-        <Infos title='Mentorias' description='gratuitas para grupos' />
         <Infos title='+1200 Pessoas' description='participantes' />
-        <Infos title='espaço comunidades' description='acesso aos grupos' />
-        <Infos title='Feira de negócios' description='exposição de empresas' />
-        {/* <Infos title='Espaço english' description='comunicação 100% em inglês' /> */}
-        {/* <Infos title='trilha exclusiva' description='diversos conteúdos' /> */}
-        <Infos title='coworking' description='ambiente exclusivo' />
-        <Infos title='Experiências' description='Ativações instagramavéis' />
+        <Infos title='PALCO PRINCIPAL' description='DIVERSOS CONTEÚDOS' />
+        <Infos title='feira de negócios' description='exposição de empresas' />
+        <Infos title='sala de mentoria' description='gratuita para grupos' />
         <Infos
-          title='Studio de fotos'
-          description='Fotos profissionais Linkedin'
+          title='espaço comunidades'
+          description='expanda seu networking'
         />
+        <Infos title='studio fotos' description='fotos profissionais' />
+        <Infos title='Coding Dojo' description='rodadas de disputa' />
+        <Infos title='Podcast' description='ao vivo com palestrantes' />
+        <Infos title='Experiências' description='Ativações instagramavéis' />
+        <Infos title='coworking' description='ambiente exclusivo' />
+        <Infos title='PODCAST' description='COM A COMUNIDADE HOUSE JS' />
       </div>
       {/* </div> */}
       {/* <div className="absolute w-[35%] h-[35%] md:w-[50%] md:h-[50%] right-[-7%] bottom-0 z-2 scale-[-1] rotate-90">

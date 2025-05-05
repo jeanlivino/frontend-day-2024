@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             </a>
             <div className='fixed w-full flex justify-center bottom-0 right-0 p-4 md:p-0 md:static md:w-auto z-10'>
               <a href='https://eventos.frontendce.com.br/event/front-end-day-2025'>
-                <Button variant='pink'>PRÉ-VENDA</Button>
+                <Button variant='pink'>ingressos</Button>
               </a>
             </div>
           </div>

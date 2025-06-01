@@ -7,10 +7,10 @@ type Props = {
   communities: Community[];
 };
 
-const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
+const PartnersSection: React.FC<Props> = ({ communities }) => {
   return (
     <section className='py-6 lg:pb-48 space-y-12 '>
-      <div className='container'>
+      {/* <div className='container'>
         <h2 className='text-3xl font-kdam font-bold text-center  uppercase my-8'>
           APOIO
         </h2>
@@ -37,7 +37,7 @@ const PartnersSection: React.FC<Props> = ({ partners, communities }) => {
             </a>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className='container'>
         <h2 className='text-3xl font-kdam font-bold text-center  uppercase my-8'>
           COMUNIDADES PARCEIRAS

@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import InfosSection from '@/components/InfosSection';
 import LastEdtionSection from '@/components/LastEditionSection';
+import PartnersSection from '@/components/PartnersSection';
 import PhotosCarousel from '@/components/PhotosCarousel';
 import SpeakersSection from '@/components/SpeakersSection';
 import { getSiteData } from '@/services/site';
@@ -26,10 +27,10 @@ export default async function Home() {
       <LastEdtionSection />
       <SpeakersSection speakers={data.speakers} />
       <FaqSection faq={data.faq} />
-      {/* <PartnersSection
+      <PartnersSection
         partners={data.partners}
         communities={data.communities}
-      /> */}
+      />
       <Footer />
     </main>
   );

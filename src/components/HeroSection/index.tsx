@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
                   O maior evento da comunidade Front-End CE
                 </h1>
                 <p className='md:text-xl text-white mt-3'>
-                  Com tema <b>Fortaleza e Crescer</b>, a 4º edição do Front End
+                  Com tema <b>Fortalecer e Crescer</b>, a 4º edição do Front End
                   Day chega com tudo! 12 horas de evento com alto nível de
                   conteúdo e networking.
                 </p>

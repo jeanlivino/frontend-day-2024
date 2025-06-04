@@ -46,6 +46,12 @@ const Header: React.FC = () => {
             <a href='/midia-kit.pdf' target='_blank' className='text-white'>
               Midia kit 2025
             </a>
+            <a href='#speakers' className='text-white'>
+              Palestrantes
+            </a>
+            <a href='/agenda' className='text-white'>
+              Agenda
+            </a>
             <a href='#faq' className='text-white'>
               FAQ
             </a>

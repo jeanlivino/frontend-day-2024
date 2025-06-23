@@ -8,11 +8,11 @@ type Props = {
 
 const SponsorsSection: React.FC<Props> = ({ sponsors }) => {
   return (
-    <div className='container mx-auto mt-4 mb-8 p-8'>
+    <div className='container mx-auto mt-4 mb-8 p-8 pb-32'>
       <h2 className='text-3xl font-kdam font-bold text-center uppercase'>
         Patrocínio
       </h2>
-      <div className='flex gap-2 md:gap-16 justify-center items-center mt-8 flex-wrap'>
+      <div className='flex gap-2 md:gap-16 justify-center items-center flex-wrap'>
         {sponsors.map((sponsor, index) => (
           <a
             href={sponsor.link}

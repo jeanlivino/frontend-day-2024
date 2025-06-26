@@ -27,9 +27,8 @@ const SponsorsSection: React.FC<Props> = ({ sponsors }) => {
               height={200}
               alt={sponsor.name}
               style={{
-                width: index === 0 ? '300px' : '200px',
                 objectFit: 'contain',
-                aspectRatio: ' 4/3',
+                aspectRatio: '4/3',
               }}
             />
           </a>

@@ -4,8 +4,8 @@ const HeroSection: React.FC = () => {
   return (
     <div className='bg-black relative z-1'>
       <div className='bg-noise'>
-        <div className='bg-orange-blur bg-no-repeat bg-[length:90%] sm:bg-[length:40%] bg-left-bottom'>
-          <div className=' min-h-[80vh] flex flex-col items-center justify-center p-4  py-32 md:py-[122px]'>
+        <div className='bg-orange-blur bg-no-repeat bg-[length:90%] sm:bg-[length:40%] bg-left-bottom  min-h-[80vh]'>
+          <div className='flex flex-col items-center justify-center p-4  pt-32 md:pt-[122px]'>
             <div className='grid md:grid-cols-[1fr_1.8fr] reverse container max-w-[1160px] mx-auto gap-4 md:gap-8'>
               <div className='grid'>
                 <h1 className='text-2xl md:text-4xl font-bold font-kdam uppercase text-primary'>
@@ -36,6 +36,14 @@ const HeroSection: React.FC = () => {
                 Centro
               </p>
             </div>
+          </div>
+          <div className='flex justify-center sm:container'>
+            <Image
+              src='/speakers.png'
+              alt='Palestrantes'
+              width={1920}
+              height={596}
+            />
           </div>
         </div>
       </div>

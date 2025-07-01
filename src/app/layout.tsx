@@ -34,6 +34,13 @@ export default function RootLayout({
     <html className='scroll-smooth' lang='en'>
       <GoogleAnalytics gaId='G-TCEJTMGS4W' />
       <Script
+        id='rdStation'
+        type='text/javascript'
+        strategy='afterInteractive'
+        src='https://d335luupugsy2.cloudfront.net/js/loader-scripts/efc6148f-0aab-4757-9726-c580f397f30d-loader.js'
+      />
+
+      <Script
         id='clarity-js'
         strategy='afterInteractive'
         type='text/javascript'

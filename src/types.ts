@@ -7,6 +7,8 @@ export interface SiteData {
   faq: FAQItem[];
   activate_agenda?: boolean;
   images: string[];
+  mentors: Mentor[];
+  workshops: Workshop[];
 }
 
 export interface Sponsor {
@@ -54,4 +56,17 @@ export interface Community {
 export interface FAQItem {
   question: string;
   answer: string;
+}
+
+export interface Workshop {
+  name: string;
+  image: string;
+  theme: string;
+  hour: string;
+}
+
+export interface Mentor {
+  name: string;
+  image: string;
+  theme: string;
 }

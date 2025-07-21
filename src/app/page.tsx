@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import InfosSection from '@/components/InfosSection';
 import LastEdtionSection from '@/components/LastEditionSection';
+import MentorsAndWorkshops from '@/components/MentorsAndWorkshops';
 import PartnersSection from '@/components/PartnersSection';
 import PhotosCarousel from '@/components/PhotosCarousel';
 import SpeakersSection from '@/components/SpeakersSection';
@@ -21,12 +22,13 @@ export default async function Home() {
       <Header />
       <HeroSection />
       <CountdownSection />
-      <SponsorsSection sponsors={data.sponsors} />
+      <SponsorsSection sponsors={data.sponsors} partners={data.partners} />
       <InfosSection />
       <PhotosCarousel images={data.images} />
       <EventsPlaceSection />
       <LastEdtionSection />
       <SpeakersSection speakers={data.speakers} />
+      <MentorsAndWorkshops mentors={data.mentors} workshops={data.workshops} />
       <FaqSection faq={data.faq} />
       <PartnersSection
         partners={data.partners}

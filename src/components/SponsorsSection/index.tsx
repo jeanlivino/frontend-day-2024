@@ -9,7 +9,7 @@ type Props = {
 
 const SponsorsSection: React.FC<Props> = ({ sponsors, partners }) => {
   return (
-    <div className='container mx-auto mt-4 mb-8 p-8 pb-32'>
+    <div className='container mx-auto mt-4 mb-8 p-8'>
       <h2 className='text-3xl font-kdam font-bold text-center uppercase'>
         Patrocínio
       </h2>

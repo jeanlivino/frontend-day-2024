@@ -13,7 +13,7 @@ const MentorsAndWorkshops: React.FC<Props> = ({ mentors, workshops }) => {
       <h2 className='text-3xl font-kdam font-bold text-center uppercase'>
         Workshops
       </h2>
-      <div className='grid md:grid-cols-2 gap-8 mt-16'>
+      <div className='grid grid-cols-2 gap-8 mt-16'>
         {workshops.map((workshop, index) => (
           <div key={index} className='grid gap-4 md:grid-cols-2'>
             <Image
@@ -24,11 +24,11 @@ const MentorsAndWorkshops: React.FC<Props> = ({ mentors, workshops }) => {
               className='w-full aspect-square object-cover'
             />
             <div>
-              <h3 className='text-3xl font-bold text-primary'>
+              <h3 className='sm:text-lg md:text-3xl font-bold text-primary'>
                 {workshop.name}
               </h3>
-              <p className='text-lg mt-1 font-semibold'>{workshop.theme}</p>
-              <p className='text-md'>{workshop.hour}</p>
+              <p className='mt-1 font-semibold'>{workshop.theme}</p>
+              <p className='text-sm'>{workshop.hour}</p>
             </div>
           </div>
         ))}

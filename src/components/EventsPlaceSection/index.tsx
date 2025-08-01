@@ -23,12 +23,14 @@ function EventsPlaceSection() {
             <p>
               Av. Monsenhor Tabosa, 740 <br /> Centro – Fortaleza – CE
             </p>
-            <Button
-              className='border border-primary-950 bg-white text-primary-950 font-semibold text-base max-w-48 hover:bg-primary-600 hover:text-slate-50 hover:border-l-primary-700'
-              size={'lg'}
-            >
-              Como chegar
-            </Button>
+            <a href='https://maps.app.goo.gl/K1DZD1Yi2fAJr2hq5' target='_blank'>
+              <Button
+                className='border border-primary-950 bg-white text-primary-950 font-semibold text-base max-w-48 hover:bg-primary-600 hover:text-slate-50 hover:border-l-primary-700'
+                size={'lg'}
+              >
+                Como chegar
+              </Button>
+            </a>
           </div>
         </div>
       </div>

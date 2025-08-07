@@ -8,9 +8,9 @@ function InfosSection() {
   return (
     <section
       id='event'
-      className='relative z-10 md:mt-[-260px] sm:mt-[-120px] flex items-center flex-col gap-10 bg-noise min-h-[50vh] bg-no-repeat bg-cover pt-8 overflow-hidden'
+      className='relative z-10 flex items-center flex-col gap-10 bg-noise min-h-[50vh] bg-no-repeat bg-cover pt-8 overflow-hidden'
     >
-      <div className='pt-[20px] sm:pt-[100px] flex justify-center items-center max-w-[960px] mx-auto mt-10'>
+      <div className='pt-[20px]  flex justify-center items-center max-w-[960px] mx-auto mt-10'>
         <div className='flex max-lg:flex-col max-lg:text-center gap-11 justify-center items-center w-full'>
           <Image
             className='w-96 hidden md:block'

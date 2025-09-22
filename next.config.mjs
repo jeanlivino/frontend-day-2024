@@ -37,6 +37,11 @@ const nextConfig = {
         destination:
           'https://fend-certificates-api.onrender.com/certificate/:path*',
       },
+      {
+        source: '/2025/meu-certificado/:path*',
+        destination:
+          'https://fend-certificates-api-d27m.vercel.app/api/2025/certificate/:path*',
+      },
     ];
   },
 };
